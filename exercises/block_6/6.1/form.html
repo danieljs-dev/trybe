@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de currículo</title>
+  </head>
+  <body>
+    <!-- CABECALHO-->
+    <header class="curriculum-form">
+      <h1>Formulário de currículo</h1>
+    </header>
+
+    <!-- FORMULARIO -->
+    <form action="" method="GET" id="form" class="speaker-form">
+      <div class="for-row">
+
+        <div class="line-content">
+          <fieldset class="">
+            
+            <legend>Informações Pessoais</legend>
+            
+            <!-- NOME -->
+            <label for="full-name">Nome:</label>
+            <input type="text" name="full-name" id="full-name" maxlength="40" placeholder="Digite o seu nome" required>
+            <!-- E-MAIL -->
+            <label for="e-mail">Email:</label>
+            <input type="text" name="e-mail" id="e-mail" maxlength="50" placeholder="Digite o seu e-mail" required>
+            <!-- CPF -->
+            <label for="cpf">CPF:</label>
+            <input type="number" name="cpf" id="cpf" maxlength="11" placeholder="Apenas números" required>
+            <!-- ENDERECO -->
+            <label for="address">Endereço:</label>
+            <input type="text" name="address" id="address" maxlength="200" required>
+            <!-- CIDADE -->
+            <label for="city">Cidade:</label>
+            <input type="text" name="city" id="city" maxlength="28" required>
+            <!-- ESTADO -->
+            <label for="state">Estado:</label>
+            <select name="state" id="state"></select>
+            <!-- TIPO -->
+            <label for="">Tipo:</label>
+            <input type="radio" name="type" id="type-home" value="type" required>
+            <label for="type-home">Casa</label>
+            <input type="radio" name="type" id="type-apartment" value="type" required>
+            <label for="type-apartment">Apartamento</label>
+
+          </fieldset>
+        </div>
+
+        <div class="line-content">
+          <fieldset class="">
+            <legend>Dados do seu último emprego</legend>
+
+            <!-- RESUMO CURRICULO -->
+            <label for="resume-summary">Resumo do currículo:</label><br>
+            <textarea name="resume-summary" id="resume-summary" maxlength="1000" required></textarea>
+
+            <!-- CARGO -->
+            <label for="office">Cargo:</label>
+            <input type="text" name="office" id="office" maxlength="40" required>
+
+            <!-- JOB DESCRIPTION -->
+            <label for="job-description">Descrição do cargo:</label>
+            <input type="text" name="job-description" id="job-description" maxlength="500" required>
+
+            <!-- DATA DE INICIO -->
+            <label for="date">Data:</label>
+            <input type="text" name="date" id="date" placeholder="dd/mm/aaaa" required>
+            <span id='message'></span>
+
+          </fieldset>
+        </div>
+
+      </div>
+    </form>
+
+  </body>
+</html>
