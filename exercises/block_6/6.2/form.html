@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bulma.min.css">
+    <link rel="stylesheet" href="css/DatePickerX.min.css">
+    <link rel="stylesheet" href="css/justValidateTooltip.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Formulário de currículo</title>
+  </head>
+  <body>
+
+    <!-- CABECALHO-->
+    <header class="section">
+      <h1 class="title has-text-centered">Formulário de currículo</h1>
+    </header>
+
+    <!-- FORMULARIO -->
+    <form action="" method="GET" id="form" class="js-form">
+
+      <div class="field">
+        <label class="subtitle">Informações Pessoais</label>
+      </div>
+
+      <!-- NOME -->
+      <div class="field">
+        <label class="label" for="full-name">Nome:</label>
+        <div class="control">
+          <input class="input" type="text" name="full-name" id="full-name" maxlength="40" data-validate-field="name" placeholder="Digite o seu nome" required>
+        </div>
+      </div>
+
+      <!-- E-MAIL -->
+      <div class="field">
+        <label class="label" for="e-mail">Email:</label>
+        <div class="control">
+          <input class="input" type="email" name="e-mail" id="e-mail" data-validate-field="email" maxlength="50" placeholder="Digite o seu e-mail" required>
+        </div>
+      </div>
+
+      <!-- CPF -->
+      <div class="field">
+        <label class="label" for="cpf">CPF:</label>
+        <div class="control">
+          <input class="input" type="text" name="cpf" id="cpf" maxlength="14" placeholder="***.***.***-**" data-validate-field="cpf" >
+        </div>
+      </div>
+
+      <!-- ENDERECO -->
+      <div class="field">
+        <label class="label" for="address">Endereço:</label>
+        <div class="control">
+          <input class="input" type="text" name="address" id="address" data-validate-field="text" maxlength="200" required>
+        </div>
+      </div>
+
+      <!-- CIDADE -->
+      <div class="field">
+        <label class="label" for="city">Cidade:</label>
+        <div class="control">
+          <input class="input" type="text" name="city" id="city" data-validate-field="text" maxlength="28" required>
+        </div>
+      </div>
+
+      <!-- ESTADO -->
+      <div class="field">
+        <label class="label" for="state">Estado:</label>
+        <div class="control">
+          <select class="select" name="state" id="state" data-validate-field="text">
+            <option value="" selected="selected">Selecione</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- TIPO -->
+      <div class="field">
+        <label class="label" for="">Tipo:</label>
+        <div class="control"></div>
+          <label class="radio" for="type-home">
+            <input type="radio" name="type" id="type-home" value="type" data-validate-field="radio" required>
+            Casa
+          </label>
+          <label class="radio" for="type-apartment">
+            <input type="radio" name="type" id="type-apartment" value="type" data-validate-field="radio" required>
+            Apartamento
+          </label>
+        </div>
+      </div>
+
+      <!-- DADOS DO SEU ULTIMO EMPREGO -->
+      <div class="field">
+        <label class="subtitle">Dados do seu último emprego</label>
+      </div>
+
+      <!-- RESUMO CURRICULO -->
+      <div class="field">
+        <label class="label" for="resume-summary">Resumo do currículo:</label>
+        <div class="control">
+          <textarea class="textarea" name="resume-summary" id="resume-summary" data-validate-field="text" maxlength="1000" required></textarea>
+        </div>
+      </div>
+
+      <!-- CARGO -->
+      <div class="field">
+        <label class="label" for="office">Cargo:</label>
+        <div class="control">
+          <input class="input" type="text" name="office" id="office" data-validate-field="text" maxlength="40" required>
+        </div>
+      </div>
+
+      <!-- DESCRICAO DO CARGO -->
+      <div class="field">
+        <label class="label" for="job-description">Descrição do cargo:</label>
+        <div class="control">
+          <input class="input" type="text" name="job-description" id="job-description" data-validate-field="text" maxlength="500" required>
+        </div>
+      </div>
+
+      <!-- DATA DE INICIO -->
+      <div class="field">
+        <label class="label" for="date">Data:</label>
+        <div class="control">
+          <input class="input" type="text" name="date" id="date" data-validate-field="text" placeholder="Selecione a data" required>
+          <span id='message'></span>
+        </div>
+      </div>
+
+      <!-- BOTAO ENVIAR -->
+      <div class="field is-grouped">
+        <div class="control">
+          <button class="button is-link" type="submit">Enviar</button>
+        </div>
+        <div class="control">
+          <button class="button is-link is-light">Limpar</button>
+        </div>
+      </div>
+
+    </form>
+
+    <script src="js/DatePickerX.min.js"></script>
+    <script src="js/just-validate.min.js"></script>
+    <script src="js/script.js"></script>
+
+  </body>
+</html>
