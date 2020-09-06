@@ -1,0 +1,81 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: rgb(82, 82, 82);
+  color: white;
+}
+
+h1 {
+
+}
+header p {
+  color: rgb(245, 225, 48);
+}
+
+header nav ul {
+  list-style: none;
+  color: rgb(245, 225, 48);
+}
+
+header nav ul {
+  display: flex;
+}
+
+header li {
+  margin: 0 15px;
+}
+
+header {
+  background-color: rgb(44, 44, 44);
+  top: 0;
+  left: 0;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container {
+
+}
+
+.aside-content {
+  display: flex;
+  justify-content: space-between;
+  top: 0;
+  left: 0;
+  padding: 20px 50px;
+}
+
+.aside-one {
+
+}
+
+.aside-two {
+
+}
+
+.main-content {
+
+}
+
+
+
+
+
+@media screen and (max-width: 360px) {
+
+}
+
+@media screen and (min-width: 800px) {
+
+}
+
+@media screen and (max-width: 1280px) {
+
+}
